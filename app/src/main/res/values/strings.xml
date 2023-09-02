@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Shirtify</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Products</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_cart">Cart</string>
+    <string name="menu_orders">My Orders</string>
+
+    <string-array name="province">
+        <item>Select your Province</item>
+        <item>Punjab</item>
+    </string-array>
+    <string-array name="city_names">
+        <item>Ambalangoda</item>
+        <item>Ampara</item>
+        <item>Anuradhapura</item>
+        <item>Badulla</item>
+        <item>Balangoda</item>
+        <item>Bandarawela</item>
+        <item>Batticaloa</item>
+        <item>Beruwala</item>
+        <item>Chavakacheri</item>
+        <item>Chilaw</item>
+        <item>Colombo</item>
+        <item>Dambulla</item>
+        <item>Eravur</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Gampola</item>
+        <item>Hambantota</item>
+        <item>Haputale</item>
+        <item>Harispattuwa</item>
+        <item>Hatton</item>
+        <item>Horana</item>
+        <item>Ja-Ela</item>
+        <item>Jaffna</item>
+        <item>Kadugannawa</item>
+        <item>Kalmunai</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Kattankudy</item>
+        <item>Katunayake</item>
+        <item>Kegalle</item>
+        <item>Kelaniya</item>
+        <item>Kolonnawa</item>
+        <item>Kuliyapitiya</item>
+        <item>Kurunegala</item>
+        <item>Mannar</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Minuwangoda</item>
+        <item>Moneragala</item>
+        <item>Moratuwa</item>
+        <item>Mount Lavinia</item>
+        <item>Nawalapitiya</item>
+        <item>Negombo</item>
+        <item>Nugegoda</item>
+        <item>Nuwara Eliya</item>
+        <item>Panadura</item>
+        <item>Peliyagoda</item>
+        <item>Point Pedro</item>
+        <item>Puttalam</item>
+        <item>Ratnapura</item>
+        <item>Sainthamarathu</item>
+        <item>Seethawakapura</item>
+        <item>Sigiriya</item>
+        <item>Sri Jayawardenapura</item>
+        <item>Talawakele</item>
+        <item>Tangalle</item>
+        <item>Trincomalee</item>
+        <item>Valvettithurai</item>
+        <item>Vavuniya</item>
+        <item>Wattala</item>
+        <item>Wattegama</item>
+        <item>Weligama</item>
+    </string-array>
+
+    <string name="title_activity_reports">ReportsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

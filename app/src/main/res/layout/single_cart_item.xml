@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_card"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="1dp"
+        android:layout_centerVertical="true"
+        android:elevation="20dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/p_img"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_card"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/crimson_text_semibold"
+                android:text="Facial Cleanser"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_cross" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cart_price_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="$12.5"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/minus_btn"
+                    android:textSize="16sp"
+                    android:text="-"
+                    android:background="@drawable/minus_btn_back"
+                    android:layout_width="30dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:id="@+id/quantity_tv"
+                    android:textSize="16sp"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:id="@+id/plus_btn"
+                    android:textSize="16sp"
+                    android:background="@drawable/round_black"
+                    android:text="+"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

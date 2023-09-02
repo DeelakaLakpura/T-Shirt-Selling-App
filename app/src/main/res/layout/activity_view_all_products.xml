@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/quantum_bluegrey100"
+    android:layout_height="match_parent"
+    tools:context="com.dsmini.Shirtify.Admin.ViewAllProductsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/quantum_indigo900"
+        android:elevation="5dp"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ic_back_arrow"
+                android:layout_width="24dp"
+                android:onClick="goBack"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:layout_height="24dp"
+                app:tint="@color/quantum_bluegrey100"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Available Products"
+                android:textColor="@color/quantum_bluegrey100"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_below="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:hint="Search product"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="@color/grey"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card2"
+        android:visibility="visible"
+        tools:listitem="@layout/single_product_layout"
+        android:layout_marginBottom="10dp"
+        android:overScrollMode="never" />
+    <TextView
+        android:id="@+id/no_product"
+        android:gravity="center"
+        android:text="No Product found"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/spin_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

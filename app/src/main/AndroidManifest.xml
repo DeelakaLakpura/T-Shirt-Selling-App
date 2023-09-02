@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dsmini.Shirtify">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EasyShopping">
+
+        <activity
+            android:name=".Admin.AdminSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.OrderDetailsAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.OrderDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Admin.ReportsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_reports"
+            android:theme="@style/Theme.EasyShopping.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Admin.AdminFeedbackActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.AddNewFeedbackActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.FeedbacksActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.SearchFiltersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.CustomersOrders"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ProductDetailsActivity"
+            android:exported="true" />
+        <activity android:name=".Admin.ViewAllProductsActivity" />
+        <activity android:name=".Admin.NewProductActivity" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.EasyShopping.NoActionBar" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.SignupUserActivity" />
+        <activity android:name=".Activity.CartActivity" />
+        <activity android:name=".Activity.CheckOutActivity" />
+        <activity android:name=".Admin.AdminHome" />
+        <activity android:name=".Admin.AdminLoginActivity" />
+        <activity android:name=".Activity.EventLocationActivity" />
+        <activity android:name=".Activity.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDNAcz60uD06ms4iq1lHv77BDtJJ41ECYs" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9646142777301866~5874559772"/>
+    </application>
+
+</manifest>

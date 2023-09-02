@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "313028705189",
+    "project_id": "helabojun-99869",
+    "storage_bucket": "helabojun-99869.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313028705189:android:cfc9fd26ea001f72a4864c",
+        "android_client_info": {
+          "package_name": "com.dsmini.Shirtify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313028705189-3gu875v6gvvabn65ip8ovajca3hdua25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9wuKhzYZqyoe4AeB9tHzOggJnrzPn328"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313028705189-3gu875v6gvvabn65ip8ovajca3hdua25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313028705189:android:625425bf3686dff1a4864c",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313028705189-3gu875v6gvvabn65ip8ovajca3hdua25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9wuKhzYZqyoe4AeB9tHzOggJnrzPn328"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313028705189-3gu875v6gvvabn65ip8ovajca3hdua25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

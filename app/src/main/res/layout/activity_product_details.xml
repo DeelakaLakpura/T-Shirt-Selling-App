@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_bluegrey100"
+    tools:context="com.dsmini.Shirtify.Activity.ProductDetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:onClick="goBack"
+        android:src="@drawable/ic_back_arrow"
+        app:tint="@color/black"/>
+
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_card"
+        android:layout_below="@+id/ic_back"
+
+        android:padding="19dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/loading" />
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_card"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/product_name"
+                android:text="Facial Cleanser"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:fontFamily="@font/p_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/product_description"
+                android:text="Facial Cleanser is the best face wash for your skin"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:maxLines="3"
+                android:fontFamily="@font/p_i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="LKR:.90"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/card2s"
+                    android:layout_toEndOf="@+id/product_price"
+                    android:fontFamily="@font/roboto"
+                    android:text="Homagama"
+                    android:gravity="center"
+                    android:textColor="@color/price_green_color"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/pacifico"
+                    android:text="LKR:.90"
+                    android:visibility="gone"
+       android:layout_below="@+id/product_price"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/quantity_background"
+                    android:layout_toLeftOf="@id/add_to_cart_btn"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/minus_btn"
+                        android:textSize="16sp"
+                        android:text="-"
+                        android:layout_width="30dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/quantity_tv"
+                        android:textSize="16sp"
+                        android:text="1"
+                        android:gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/plus_btn"
+                        android:textSize="16sp"
+                        android:text="+"
+                        android:gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2s"
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/add_to_cart_btn"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp" >
+
+                <ImageView
+                    android:id="@+id/wp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/whatsapp"
+
+                 />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/add_to_cart_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:cardBackgroundColor="@color/black"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Order"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:elevation="100dp"
+        android:background="@color/white"
+        android:layout_height="20dp"/>
+
+
+</RelativeLayout>
